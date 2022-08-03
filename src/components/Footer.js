@@ -11,7 +11,7 @@ const Footer = () => {
         <form>
           <button
             className="footer-flex-button"
-            formaction="https://github.com/akutuh"
+            formAction="https://github.com/akutuh"
           >
             <img className="logo" src={gitsm} alt="github logo"></img>
           </button>
@@ -21,7 +21,7 @@ const Footer = () => {
         <form>
           <button
             className="footer-flex-button"
-            formaction="https://www.linkedin.com/in/akutuhkanen/"
+            formAction="https://www.linkedin.com/in/akutuhkanen/"
           >
             <img className="logo" src={LiLogo} alt="linkedin logo"></img>
           </button>

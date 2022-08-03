@@ -3,27 +3,31 @@ import '../styles/Contact.css'
 
 const Contact = () => {
   return (
-    <div>
-      <h2>contact me</h2>
-      <div id="contact" className="grid-container">
-        <div className="grid-item">
-          <input placeholder="Name"></input>
+    <div id="contact">
+      <div className="contact-grid-container">
+        <div className="item0">
+          <h2>contact me</h2>
         </div>
-        <div className="grid-item">
-          <input placeholder="Email"></input>
+        <div className="item1">
+          <input className="inputbox" placeholder="Name"></input>
         </div>
-        <div className="grid-item">
-          <input placeholder="Subject"></input>
+        <div className="item2">
+          <input className="inputbox" placeholder="Email"></input>
         </div>
-        <div className="grid-item">
-          <input placeholder="Phone"></input>
+        <div className="item3">
+          <input className="inputbox" placeholder="Subject"></input>
         </div>
-      </div>
-      <div className="textbox">
-        <input></input>
-      </div>
-      <div>
-        <button>send</button>
+        <div className="item4">
+          <input className="inputbox" placeholder="Phone"></input>
+        </div>
+        <div className="item5">
+          <form>
+            <textarea className="inputboxtext" cols="80" rows="10"></textarea>
+          </form>
+        </div>
+        <div className="item6">
+          <button className="contactbutton">submit</button>
+        </div>
       </div>
     </div>
   )

@@ -1,21 +1,90 @@
 @import url("https://fonts.googleapis.com/css?family=Inconsolata&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Staatliches&display=swap");
-.grid-container {
-  display: grid;
-  flex-direction: column;
-  background-color: #22262a;
+.item0 {
+  grid-area: contact;
+  color: rgb(243, 242, 242);
+  font-family: Staatliches, sans-serif;
 }
-.grid-container .grid-item {
-  width: auto;
-  margin: 10px;
+
+.item1 {
+  grid-area: name;
+}
+
+.item2 {
+  grid-area: email;
+}
+
+.item3 {
+  grid-area: subject;
+}
+
+.item4 {
+  grid-area: phone;
+}
+
+.item5 {
+  grid-area: text;
+}
+
+.item6 {
+  grid-area: submit;
+}
+
+.contact-grid-container {
+  display: grid;
+  grid-template-areas: "contact contact contact contact contact contact" "name name name email email email" "subject subject subject phone phone phone" "text text text text text text" "submit submit submit submit submit submit";
+  background-color: #22262a;
+  gap: 0px;
+  padding: 10px;
+  width: 100%;
+}
+.contact-grid-container .contactbutton {
+  transition: all 0.15s;
+  width: 50%;
+  align-items: center;
+  height: 4.5rem;
+  line-height: 1;
+  background-color: #22262a;
+  border: 2px solid;
+  color: rgb(243, 242, 242);
+  font-size: 2rem;
+  font-family: Staatliches, sans-serif;
+}
+.contact-grid-container .contactbutton:hover {
+  background-color: rgb(87, 84, 84);
+  cursor: pointer;
+}
+.contact-grid-container .inputbox {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+.contact-grid-container .inputboxtext {
+  padding: 12px 20px;
+  width: 85%;
+  height: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+.contact-grid-container > div {
+  background-color: #22262a;
   text-align: center;
-  line-height: 75px;
+  padding: 20px 0;
   font-size: 30px;
 }
 
-h2 {
+.flex-container-text {
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: #22262a;
+  position: relative;
+  justify-content: center;
   text-align: center;
   font-family: Staatliches, sans-serif;
   color: rgb(243, 242, 242);
-  background-color: #22262a;
 }/*# sourceMappingURL=Contact.css.map */

@@ -4,7 +4,7 @@ import alarm from '../../public/alarm.png'
 
 const Projects = () => {
   return (
-    <div>
+    <div id="projects">
       <div className="grid-container">
         <div className="grid-item">
           <img src={alarm} />

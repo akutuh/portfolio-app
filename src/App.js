@@ -5,14 +5,17 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 import Projects from './components/Projects'
 import '../src/styles/App.css'
+import { Routes, Route } from 'react-router-dom'
 
 const App = () => {
   return (
     <div className="app">
       <NavBar />
-      <Main />
-      <Projects />
-      <Contact />
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
       <Footer />
     </div>
   )

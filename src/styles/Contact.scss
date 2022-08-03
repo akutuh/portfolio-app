@@ -1,22 +1,79 @@
 @import '../Variables/Variables.scss';
-
-.grid-container {
-  display: grid;
-  flex-direction: column;
-  background-color: $blackColor;
-
-  .grid-item {
-    width: auto;
-    margin: 10px;
-    text-align: center;
-    line-height: 75px;
-    font-size: 30px;
-  }
+.item0 {
+  grid-area: contact;
+  color: $whiteColor;
+  font-family: $mainFont;
+}
+.item1 {
+  grid-area: name;
+}
+.item2 {
+  grid-area: email;
+}
+.item3 {
+  grid-area: subject;
+}
+.item4 {
+  grid-area: phone;
+}
+.item5 {
+  grid-area: text;
+}
+.item6 {
+  grid-area: submit;
 }
 
-h2 {
+.contact-grid-container {
+  display: grid;
+  grid-template-areas:
+    'contact contact contact contact contact contact'
+    'name name name email email email'
+    'subject subject subject phone phone phone'
+    'text text text text text text'
+    'submit submit submit submit submit submit';
+  background-color: $blackColor;
+  gap: 0px;
+  padding: 10px;
+  width: 100%;
+
+  .contactbutton {
+    @include buttonStyle();
+    &:hover {
+      background-color: $hoverBlackColor;
+      cursor: pointer;
+    }
+  }
+  .inputbox {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-family: $titleFont;
+    font-size: 15px;
+  }
+  .inputboxtext {
+    padding: 12px 20px;
+    width: 85%;
+    height: 100px;
+    font-family: $titleFont;
+    font-size: 15px;
+  }
+}
+.contact-grid-container > div {
+  background-color: $blackColor;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.flex-container-text {
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: $blackColor;
+  position: relative;
+  justify-content: center;
   text-align: center;
   font-family: $mainFont;
   color: $whiteColor;
-  background-color: $blackColor;
 }

@@ -13,6 +13,7 @@
   gap: 10px;
 }
 .footer-flex-container .footer-flex-item {
+  font-size: 30px;
   display: flex;
   flex-direction: column;
   background-color: #171a1d;

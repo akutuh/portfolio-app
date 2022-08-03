@@ -2,8 +2,9 @@ import React, { useState } from 'react'
 import { HashLink } from 'react-router-hash-link'
 import LiLogo from '../../public/linkedin.png'
 import GitHubLogo from '../../public/githubsmall.png'
+import GitHubLogoHam from '../../public/github-logo.png'
 import '../styles/Navbar.css'
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import { Routes, Route, Link } from 'react-router-dom'
 
 const NavBar = () => {
   const [hamburgerClass, setHamburgerClass] = useState('hamburger')
@@ -21,8 +22,8 @@ const NavBar = () => {
     <>
       <div className="navbar">
         <HashLink to="/">Home</HashLink>
-        <HashLink to="/#projects">Projects</HashLink>
-        <HashLink to="/#contact">Contact</HashLink>
+        <HashLink to="/projects">Projects</HashLink>
+        <HashLink to="/contact">Contact</HashLink>
         <a href="https://www.linkedin.com/in/akutuhkanen/">
           <img className="logo" src={LiLogo} alt="LinkedIn logo" />
         </a>
@@ -37,17 +38,17 @@ const NavBar = () => {
         <HashLink onClick={handleHamburger} to="/">
           Home
         </HashLink>
-        <HashLink onClick={handleHamburger} to="/#projects">
+        <HashLink onClick={handleHamburger} to="/projects">
           Projects
         </HashLink>
-        <HashLink onClick={handleHamburger} to="/#contact">
+        <HashLink onClick={handleHamburger} to="/contact">
           Contact
         </HashLink>
         <a href="https://www.linkedin.com/in/akutuhkanen/">
           <img className="logo" src={LiLogo} alt="LinkedIn logo" />
         </a>
         <a href="https://github.com/akutuh">
-          <img className="logo" src={GitHubLogo} alt="github logo" />
+          <img className="logo" src={GitHubLogoHam} alt="github logo" />
         </a>
       </div>
     </>
