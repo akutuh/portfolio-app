@@ -12,15 +12,41 @@
   padding-left: 58px;
 }
 
-.grid-container {
+.projects-grid-container {
   display: grid;
-  grid-template-columns: auto auto;
-}
+  grid-template-columns: repeat(auto-fill, 500px);
+  justify-content: space-evenly;
+  padding-bottom: 100px;
 
-.grid-itemitem {
-  width: 380px;
-  margin: 10px;
-  border: 3px solid $blackColor;
+  h2 {
+    text-align: center;
+  }
+
+  .project-item {
+    width: 380px;
+    margin: 10px;
+    border: 3px solid $blackColor;
+    color: $whiteColor;
+    font-family: $titleFont;
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+  }
+  .button-container {
+    text-align: center;
+
+    button {
+      @include buttonStyle();
+      justify-items: center;
+      width: 150px;
+      &:hover {
+        background-color: $hoverBlackColor;
+        cursor: pointer;
+      }
+    }
+  }
 }
 
 .flexbox-item-1 {

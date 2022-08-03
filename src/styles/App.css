@@ -1,9 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Inconsolata&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Staatliches&display=swap");
 body {
   margin: 0;
   padding: 0;
+  background-color: #22262a;
 }
 
 .app {
-  min-height: 100%;
   position: relative;
+  background-color: #22262a;
 }/*# sourceMappingURL=App.css.map */

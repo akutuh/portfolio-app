@@ -3,6 +3,8 @@
   grid-area: contact;
   color: $whiteColor;
   font-family: $mainFont;
+  padding: 0px !important;
+  height: auto;
 }
 .item1 {
   grid-area: name;
@@ -22,6 +24,12 @@
 .item6 {
   grid-area: submit;
 }
+.item6::after {
+  content: '';
+  width: 100%;
+  height: 3em;
+  display: inline-block;
+}
 
 .contact-grid-container {
   display: grid;
@@ -33,8 +41,8 @@
     'submit submit submit submit submit submit';
   background-color: $blackColor;
   gap: 0px;
-  padding: 10px;
   width: 100%;
+  justify-content: space-evenly;
 
   .contactbutton {
     @include buttonStyle();
@@ -44,19 +52,17 @@
     }
   }
   .inputbox {
-    width: 80%;
+    width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
     font-family: $titleFont;
     font-size: 15px;
+    resize: vertical;
   }
   .inputboxtext {
-    padding: 12px 20px;
-    width: 85%;
+    width: 100%;
     height: 100px;
-    font-family: $titleFont;
-    font-size: 15px;
   }
 }
 .contact-grid-container > div {
@@ -77,3 +83,5 @@
   font-family: $mainFont;
   color: $whiteColor;
 }
+
+
