@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css?family=Inconsolata&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Staatliches&display=swap");
+.footer-flex-container {
+  display: flex;
+  background-color: #171a1d;
+  position: relative;
+  height: 100px;
+  left: 0;
+  bottom: 0;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  gap: 10px;
+}
+.footer-flex-container .footer-flex-item {
+  display: flex;
+  flex-direction: column;
+  background-color: #171a1d;
+  color: rgb(243, 242, 242);
+  font-family: Inconsolata, serif;
+}
+.footer-flex-container .footer-flex-item .footer-flex-button {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background-color: #171a1d;
+  border-color: rgb(243, 242, 242);
+}
+.footer-flex-container .footer-flex-item .footer-flex-button:hover {
+  background-color: rgb(87, 84, 84);
+  cursor: pointer;
+}
+.footer-flex-container .footer-flex-item .footer-flex-button .logo {
+  width: 40px;
+}/*# sourceMappingURL=Footer.css.map */

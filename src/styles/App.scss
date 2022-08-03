@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app {
+  min-height: 100%;
+  position: relative;
+  background-color: $blackColor;
+  padding: 1.5rem;
+}
