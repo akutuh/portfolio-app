@@ -53,6 +53,13 @@
   margin: 6px 0px;
   transition: 0.4s;
 }
+@media (max-width: 550px) {
+  .hamburger .bar,
+.hamburger::after,
+.hamburger::before {
+    width: 300%;
+  }
+}
 
 .hamburger.is-active::before {
   transform: rotate(-45deg) translate(-8px, 6px);

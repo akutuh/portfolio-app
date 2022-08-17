@@ -52,6 +52,9 @@
   background-color: $whiteColor;
   margin: 6px 0px;
   transition: 0.4s;
+  @media (max-width: 550px) {
+    width: 300%;
+  }
 }
 
 .hamburger.is-active::before {
