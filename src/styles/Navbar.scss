@@ -2,8 +2,8 @@
 
 .navbar {
   width: 100%;
-  height: 10em;
-  background-color: $blackColor;
+  height: 100px;
+  background-color: $footerColor;
   display: flex;
   justify-content: left;
   align-items: center;
@@ -14,7 +14,7 @@
   a {
     color: $whiteColor;
     position: relative;
-    font-size: 2vh;
+    font-size: 200%;
     text-decoration: none;
     font-family: $titleFont;
     margin: 10px;
@@ -25,8 +25,7 @@
       filter: invert(100%);
     }
     .logo {
-      width: 5vh;
-      height: auto;
+      width: 70px;
     }
   }
 }
@@ -70,7 +69,7 @@
   position: fixed;
   top: 0;
   left: 100%;
-  width: 100%;
+  width: 100vw;
   min-height: 100vh;
   display: block;
   z-index: 98;
@@ -80,21 +79,21 @@
 
   .logo {
     width: 30px;
-    height: auto;
   }
   a {
-    display: block;
-    width: 100%;
-    max-width: 250px;
-    height: 50px;
-    margin: 0 auto auto;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin-left: 20%;
+    margin-right: 20%;
     margin-bottom: 16px;
-    padding: 12px 16px;
     background-color: $whiteColor;
-    color: black;
+    color: $blackColor;
     text-decoration: none;
     font-size: 30px;
+    font-family: $secondFont;
+    min-height: 50px;
   }
 
   a:hover {

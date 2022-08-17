@@ -14,17 +14,19 @@
 
 .projects-grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 500px);
-  justify-content: space-evenly;
-  padding-bottom: 100px;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: auto;
+  justify-content: center;
+  padding-bottom: 8%;
+  padding-top: 2%;
 }
 .projects-grid-container h2 {
   text-align: center;
 }
 .projects-grid-container .project-item {
   width: 380px;
-  margin: 10px;
-  border: 3px solid #22262a;
+  margin: auto;
+  padding-bottom: 20px;
   color: rgb(243, 242, 242);
   font-family: Arial, Helvetica, sans-serif;
 }

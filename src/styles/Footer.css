@@ -3,7 +3,9 @@
 .footer-flex-container {
   display: flex;
   background-color: #171a1d;
-  position: fixed;
+  position: absolute;
+  bottom: 0;
+  margin-top: auto;
   height: 100px;
   left: 0;
   bottom: 0;
